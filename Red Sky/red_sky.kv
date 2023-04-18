@@ -1,0 +1,20 @@
+#:import menu menu
+MainWidget:
+<MainWidget>:
+    canvas.before:
+        Rectangle:
+            size:self.size
+            source:'RESOURCES/images/mathias-reding-6FGyKAJwtRc-unsplash.jpg'
+    main_menu: main_menu
+    x_cor: self.width/2
+    y_cor: self.height*0.75
+
+
+    MenuWidget:
+        id:main_menu
+    Label:
+        text:root.score_text
+        font_size:dp(25)
+        font_name:'RESOURCES/fonts/Eurostile.ttf'
+        size_hint:.18,.18
+        pos_hint:{"x":0,"top":1}

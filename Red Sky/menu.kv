@@ -1,0 +1,30 @@
+
+
+<MenuWidget>:
+    canvas.before:
+        Color:
+            rgba: 0,0,0,.85
+        Rectangle:
+            size:self.size
+
+    Label:
+        font_size:dp(35)
+        font_name:'RESOURCES/fonts/Sackers-Gothic-Std-Light.ttf'
+        text:root.parent.score_text1
+        pos_hint:{"center_x":.5,"center_y":.45}
+
+    Label:
+        font_size:dp(55)
+        font_name:'RESOURCES/fonts/Sackers-Gothic-Std-Light.ttf'
+        text:root.parent.title_menu
+        pos_hint:{"center_x":.5,"center_y":.6}
+
+    Button:
+        font_size:dp(25)
+        font_name:'RESOURCES/fonts/Eurostile.ttf'
+        text:root.parent.button_name
+        pos_hint:{"center_x":.5,"center_y":.25}
+        size_hint:.3,.15
+        on_press:root.parent.on_start_button_pressed()
+        background_normal:''
+        background_color:0.545,.137,.137,0.85
